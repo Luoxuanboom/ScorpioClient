@@ -10,7 +10,7 @@ public class GameStart : MonoBehaviour {
 	void Start () {
         GameObject mUIroot = GameObject.Find("UIRoot");
         WindowManager.Instance.Initial(mUIroot.transform);
-        WindowManager.Instance.LoadWindow("StartWindow",true);
+        WindowManager.Instance.LoadWindow("StartWindow",false);
         NetworkManager.Instance.Initial();
         DataInputManager.Instance.Initial();
     }
