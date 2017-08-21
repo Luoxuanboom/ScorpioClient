@@ -152,7 +152,7 @@ namespace LClient {
 
         public void RemoveLayer(int layer)
         {
-            if (mCanvas.ContainsKey(layer))
+            if (!mCanvas.ContainsKey(layer))
             {
                 return;
             }
